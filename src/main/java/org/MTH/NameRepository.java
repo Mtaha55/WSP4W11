@@ -1,7 +1,6 @@
 package org.MTH;
 
 public class NameRepository {
-
     public static String[] findByFirstName(final String firstName, final String[] names) {
         int count = 0;
         for (String name : names) {
@@ -57,36 +56,5 @@ public class NameRepository {
             }
         }
         return true;
-    }
-
-    public static void main(String[] args) {
-        String[] names = {"Erik Svensson", "Anna Andersson", "John Hans", "Jane Hans", "Alice Smith"};
-
-        // Test findByFirstName
-        System.out.println("Names with first name 'Erik':");
-        String[] eriks = findByFirstName("Erik", names);
-        for (String name : eriks) {
-            System.out.println(name);
-        }
-
-        // Test findByLastName
-        System.out.println("\nNames with last name 'Hans':");
-        String[] does = findByLastName("Hans", names);
-        for (String name : does) {
-            System.out.println(name);
-        }
-
-        // Test update
-        System.out.println("\nUpdate name 'John Hans' to 'John Smith':");
-        boolean updated = update("John Hans", "John Smith", names);
-        if (updated) {
-            System.out.println("Name updated successfully.");
-        } else {
-            System.out.println("Failed to update name.");
-        }
-        System.out.println("Updated names:");
-        for (String name : names) {
-            System.out.println(name);
-        }
     }
 }

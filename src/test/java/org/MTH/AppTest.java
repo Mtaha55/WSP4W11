@@ -1,6 +1,6 @@
 package org.MTH;
 
-public class App {
+public class AppTest {
     public static void main(String[] args) {
         String[] names = {"Erik Svensson", "Anna Andersson", "John Doe", "Jane Doe", "Alice Smith"};
 
