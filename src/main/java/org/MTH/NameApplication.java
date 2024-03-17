@@ -60,7 +60,7 @@ public class NameApplication {
     }
 
     public static void main(String[] args) {
-        String[] names = {"Erik Svensson", "Anna Andersson", "John Doe", "Jane Doe", "Alice Smith"};
+        String[] names = {"Erik Svensson", "Anna Andersson", "John Hans", "Jane Hans", "Alice Smith"};
 
         // Test findByFirstName
         System.out.println("Names with first name 'Erik':");
@@ -68,13 +68,13 @@ public class NameApplication {
         printNames(eriks);
 
         // Test findByLastName
-        System.out.println("\nNames with last name 'Doe':");
-        String[] does = findByLastName("Doe", names);
+        System.out.println("\nNames with last name 'Hans':");
+        String[] does = findByLastName("Hans", names);
         printNames(does);
 
         // Test update
-        System.out.println("\nUpdate name 'John Doe' to 'John Smith':");
-        boolean updated = update("John Doe", "John Smith", names);
+        System.out.println("\nUpdate name 'John Hans' to 'John Smith':");
+        boolean updated = update("John Hans", "John Smith", names);
         if (updated) {
             System.out.println("Name updated successfully.");
         } else {

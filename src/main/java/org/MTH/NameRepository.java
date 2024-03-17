@@ -1,5 +1,4 @@
 package org.MTH;
-import java.util.Arrays;
 
 public class NameRepository {
 
@@ -71,8 +70,8 @@ public class NameRepository {
         }
 
         // Test findByLastName
-        System.out.println("\nNames with last name 'Doe':");
-        String[] does = findByLastName("Doe", names);
+        System.out.println("\nNames with last name 'Hans':");
+        String[] does = findByLastName("Hans", names);
         for (String name : does) {
             System.out.println(name);
         }
